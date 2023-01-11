@@ -10,7 +10,17 @@
   <body>
     <main>
       <!-- solution start -->
-      
+      <h3 id="h">Please click on the identical tiles to verify that you are not a robot.</h3>
+      <button id="reset" type="reset" onclick="reset();">Reset</button><br>
+      <button class="img_btn"><img class="img1 given_img"></button>
+      <button class="img_btn"><img class="img2 given_img"></button>
+      <button class="img_btn"><img class="img3 given_img"></button>
+      <button class="img_btn"><img class="img4 given_img"></button>
+      <button class="img_btn"><img class="img5 given_img"></button>
+      <button class="img_btn"><img class="img6" src="" onclick="verify"></button>
+      <br>
+      <button id="verify" onclick="verify();">Verify</button>
+      <p id="para"></p>
       <!-- solution end -->
     </main>
     <script src="./script.js"></script>

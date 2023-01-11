@@ -17,9 +17,15 @@
 }
 
 img {
-  margin: 10px;
   border: 5px solid #555;
-  width: 10%;
+  /* width: 10%; */
+  object-fit: cover;
+}
+.img_btn{
+  margin: 10px;
+ width: 14%;
+ padding: 0px;
+ border: none;
 }
 
 .flex {
