@@ -17,7 +17,8 @@ for(let i=0;i<images.length;i++){
 
 function randomImage(){
    let x= Math.floor(Math.random()*images.length);
-   document.querySelector(".img6").src=img[x];
+//    document.querySelector(".img6").src=img[x];
+   document.querySelector(".img6").style.content='url("'+img[x]+'")';
 }
 randomImage();
 
@@ -26,12 +27,12 @@ for(let i=0;i<img_btns.length;i++){
 }
  
 function verify_img(btn_id) {
-    console.log(btn_id);
     noOfImgsSelected++;
     if(btn_id<img_btns.length-1){
         image1_url=img[btn_id];
     }else if(btn_id===img_btns.length-1){
-        image2_url=document.querySelector(".img6").src;
+        // image2_url=document.querySelector(".img6").src;
+        image2_url=(window.getComputedStyle(document.querySelector(".img6")).content).slice(5,-2);
     }
     if(noOfImgsSelected===1){
         img1_id=btn_id;
@@ -48,11 +49,6 @@ function verify_img(btn_id) {
     }
 }
 
-// reset_btn.addEventListener("click",()=>{
-//     image1_url="";
-//     image2_url="";
-//     noOfImgsSelected=0;
-// })
 
 function reset(){
     image1_url="";
