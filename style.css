@@ -15,8 +15,8 @@
 .img5 {
   content: url("https://picsum.photos/200/300.jpg");
 }
-.img6{
-  content: url("");
+body{
+ text-align: center;
 }
 img {
   border: 5px solid #555;
@@ -29,20 +29,13 @@ img {
  padding: 0px;
  border: none;
 }
-
-.flex {
-  display: flex;
-  justify-content: center;
+p{
+  font-size: 24px;
+  font-weight: bold;
 }
-
-.selected {
-  border: 5px solid rgb(0, 195, 255);
-}
-
-p {
-  text-align: center;
-}
-
-button {
-  margin: 20px;
+button{
+  margin: 30px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 5px;
 }
